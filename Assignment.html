@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bilal jutt</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <script>
+function AdditionBy() 
+{ 
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result").innerHTML = Number(num1) + Number(num2); 
+} 
+ 
+function SubtractionBy()
+{
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result").innerHTML = Number(num1) - Number(num2); 
+} 
+</script>
+    
+         
+  </head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Responsive Design Assignment</h1> 
+    <h2><p>Addition and Subtraction of Two Numbers in Bootstrap , Html and Javascript.</p></h2> 
+  </div>
+  
+ <div class="container">
+<div class="form-group"> 
+Enter First Number : <input type="text" id="first" ><br><br>
+Enter 2nd Number : <input type="text" id="second"/><br><br>
+</div>
+
+<input type="button" onClick="AdditionBy()" Value="Addition" 
+title="Click here to find the sum of the two numbers." />  
+<input type="button" onClick="SubtractionBy()" 
+title="Click here to find the differece of the two numbers." 
+Value="Subtraction" /> 
+</form> <br><br>
+<p>The Final Result is : 
+<span id = "result"></span> 
+</p>
+</div>
+
+
+ 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
